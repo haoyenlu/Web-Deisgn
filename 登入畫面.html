@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>登入畫面</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
+    <style media="screen" type="text/css">
+      *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      html,body{
+        height: 100%;
+      }
+      body{
+        background: url("https://picsum.photos/1300/600")
+          no-repeat center center / cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .login{
+        width: 600px;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        border:10px solid #fff;
+        box-shadow: 0 0 30px #000;
+        backdrop-filter: blur(3px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Noto Serif TC', serif;
+      }
+      .form{
+        width: 400px;
+        color: #fff;
+        text-align: center;
+      }
+      .form h2{
+        align:center;
+        font-size: 50px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #fff;
+      }
+      .form .item{
+        margin-bottom: 10px;
+      }
+      .form .item label{
+        line-height: 2;
+        font-size: 20px;
+      }
+      .form .item input{
+        width: 100%;
+        border:1px solid #aaa;
+        line-height: 3;
+        border-radius: 5px;
+      }
+      .form .btn-group{
+        font-size: 0;
+        margin-top: 20px;
+      }
+      .form .btn-group .btn{
+        font-size: 20px;
+        border-radius: 5px;
+        border:none;
+        background-color: #6ab4fe;
+        width: 190px;
+        padding:10px 0;
+        color: #fff;
+      }
+      .form .btn-group .btn:hover{
+        background-color: #86c1fd;
+        cursor: pointer;
+      }
+      .form .btn-group .btn + .btn{
+        margin-left: 20px;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="login">
+      <form class="form" action="index.html" method="post">
+        <h2>登入</h2>
+        <div class="item">
+          <label for="username">帳號</label>
+          <input type="text" name="username" id="username" value="">
+
+        </div>
+        <div class="item">
+          <label for="password">密碼</label>
+          <input type="text" name="password" id="password" value="">
+
+        </div>
+        <div class="btn-group">
+          <button type="submit" name="login-btn" class="btn">登入</button>
+          <button type="reset" name="cancel-btn" class="btn">取消</button>
+
+
+        </div>
+
+      </form>
+
+    </div>
+
+
+
+
+
+  </body>
+</html>
